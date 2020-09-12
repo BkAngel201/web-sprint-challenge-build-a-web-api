@@ -9,7 +9,7 @@ server.use(express.json())
 server.use("/api/projects", projectsRouters)
 server.use("/api/actions", actionsRouters)
 
-server.get("/", (res, req) => {
+server.get("/", (req, res) => {
     res.send("<h2>Lets Make an awesome API</h2>")
 })
 
