@@ -12,3 +12,12 @@ I need this code, but don't know where, perhaps should make some middleware, don
 
 Go code!
 */
+
+
+const app = require('./server')
+
+const port = 5000
+
+app.listen(port, () => {
+    console.log(`***Server Listening on http://localhost:${port}***`);
+})
